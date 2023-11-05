@@ -4,9 +4,7 @@ import {TASKS} from '../../mock-tasks'
 import {TaskService} from '../../services/task.service'
 
 @Component({
-    selector: 'app-tasks',
-    templateUrl: './tasks.component.html',
-    styleUrls: ['./tasks.component.css']
+    selector: 'app-tasks', templateUrl: './tasks.component.html', styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
     tasks: Task[] = [];
@@ -15,6 +13,15 @@ export class TasksComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
+        this.taskService.getTasks().subscribe((tasks: Task[]) => (this.tasks = tasks));
+    }
+
+    deleteTask(task: Task): void {
+        this.taskService.deleteTask(task).subscribe(() => (this.tasks = this.tasks.filter((t: Task): boolean => (t.id !== task.id))));
+    }
+
+    toggleReminder(task: Task): void {
+        task.reminder = !task.reminder;
+        this.taskService.updateTaskReminder(task).subscribe()
     }
 }
