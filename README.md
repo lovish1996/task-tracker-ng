@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
 
+<img width="465" alt="Screenshot 2023-11-05 at 8 28 28 PM" src="https://github.com/lovish1996/task-tracker-ng/assets/13662659/e7f729e8-c3e5-421a-90fd-1793d533b22a">
+<img width="465" alt="Screenshot 2023-11-05 at 8 28 34 PM" src="https://github.com/lovish1996/task-tracker-ng/assets/13662659/9dcafd88-4b98-488f-8457-9521c0cc1767">
+<img width="465" alt="Screenshot 2023-11-05 at 8 28 44 PM" src="https://github.com/lovish1996/task-tracker-ng/assets/13662659/1aa1a484-6f80-45cd-8184-ef4425272d5b">
+
+
 ## Install Angular CLI
 
 Run `npm install -g @angular/cli`
